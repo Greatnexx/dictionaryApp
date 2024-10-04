@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+.navbar{
+    background-color: blue;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 20px;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+
+.input{
+    width: 500px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+    outline: none;
+}
+#btn{
+    padding: 15px 30px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.results{
+    border: 1px solid gray;
+    padding: 15px 120px;
+    width: 600px;
+    border-end-end-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+h3{
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-weight:bold;
+}
+
+p{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* Media queries for small screens */
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    .input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+   
+    #btn {
+        padding: 10px 5px;
+    }
+    .results {
+        width: 100%;
+        padding: 10px 20px;
+        border-radius: 10px;
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+    .input {
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+    #btn {
+        padding: 12px ;
+        width:100%
+    }
+    h1{
+        font-size: 20px;
+    }
+}
